@@ -34,7 +34,7 @@ sudo mkdir /var/www/"$DOMAIN"
 cd /var/www/"$DOMAIN"
 sudo su -c 'echo "<?php phpinfo(); ?>" |tee info.php'
 cd ~
-wget github.com/opencart/opencart/archive/master.zip
+wget github.com/opencart/opencart/releases/download/3.0.3.1/opencart-3.0.3.1.zip
 unzip master.zip
 mv /root/opencart-master/upload/* /var/www/"$DOMAIN"/
 sudo cp /var/www/"$DOMAIN"/config-dist.php /var/www/"$DOMAIN"/config.php
